@@ -230,7 +230,9 @@ MonoBehaviour:
   playerLoc: {fileID: 1063186588}
   playerRB: {fileID: 1063186585}
   damping: 5
-  unknownScalingFactor: -0.2
+  velocityScalingFactor: 0.3
+  StrictFollowTreshold: 0.9
+  StrictFollowMultiplier: 1.1
 --- !u!1 &1063186584
 GameObject:
   m_ObjectHideFlags: 0
