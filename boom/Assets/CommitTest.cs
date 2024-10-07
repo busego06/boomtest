@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class CommitTest : MonoBehaviour
 {
-    //this file exists to test my ability to puch files
+    //this file exists to test my ability to push files
 }
