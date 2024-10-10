@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 1327339356}
   - component: {fileID: 1327339355}
   - component: {fileID: 1327339354}
+  - component: {fileID: 1327339357}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -214,6 +215,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1327339357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327339353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a258f4c9a4c2d4ca0186e18f67ce59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLoc: {fileID: 1800951205}
+  playerRB: {fileID: 1800951202}
+  damping: 5
+  velocityScalingFactor: 0.3
+  StrictFollowTreshold: 0.9
+  StrictFollowMultiplier: 1.1
 --- !u!1 &1800951201
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +269,7 @@ Rigidbody2D:
   m_LinearDrag: 0.4
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 1a74a35dea3c50a4c8130a0dc7d0daa4, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -270,7 +289,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1800951201}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: b729735b32bf0e0428512dfb2f0b89e1, type: 2}
+  m_Material: {fileID: 6200000, guid: 1a74a35dea3c50a4c8130a0dc7d0daa4, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -419,7 +438,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1850081911}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1a74a35dea3c50a4c8130a0dc7d0daa4, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
