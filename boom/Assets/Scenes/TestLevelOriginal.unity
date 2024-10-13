@@ -266,7 +266,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.4
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -400,7 +400,9 @@ MonoBehaviour:
   mousePos: {x: 0, y: 0, z: 0}
   mousePosDelta: {x: 0, y: 0, z: 0}
   objectPos: {x: 0, y: 0, z: 0}
-  boomForce: 20
+  boomForce: 15
+  recoilForce: 6
+  reloadTime: 0.75
 --- !u!1 &1446907244
 GameObject:
   m_ObjectHideFlags: 0
