@@ -27,10 +27,13 @@ public class control : MonoBehaviour
         //pixel position of the player on the screen
         objectPos = Camera.main.WorldToScreenPoint(transform.position);
         //direction of the mouse relative to the player
+        
         mousePosDelta = Vector3.Normalize(mousePos - objectPos);
+        mousePosDelta.z = 0;
+        mousePosDelta = Vector3.Normalize(mousePosDelta);
         //when Fire1 is pressed. Fire1 defaults to Mouse1 (left mouse button) iirc
         if(Input.GetButtonDown("Fire1")&&reloadCounter<=0){
-            /*Debug.Log(mousePosDelta); debug code, shows mousePosDelta in the debugger*/
+            
             //raycast
             RaycastHit2D surfacePoint = Physics2D.Raycast(transform.position + mousePosDelta*explosionDistance, mousePosDelta); 
             //creates an explosion on the nearest surface in the direction of the mouse as seen from the player.
